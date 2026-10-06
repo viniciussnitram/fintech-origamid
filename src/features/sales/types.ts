@@ -1,12 +1,12 @@
-type SalesStatus = 'pago' | 'processando' | 'falha';
+type SaleStatus = 'pago' | 'processando' | 'falha';
 
 type PaymentMethod = 'boleto' | 'pix' | 'cartao';
 
-export interface Sales {
+export interface Sale {
   id: string;
   nome: string;
   preco: number;
-  status: SalesStatus;
+  status: SaleStatus;
   pagamento: PaymentMethod;
   parcelas: number | null;
   data: string;

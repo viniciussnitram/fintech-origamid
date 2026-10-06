@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-import type { Sales } from '@/features/sales/types';
+import type { Sale } from '@/features/sales/types';
 
 export interface SalesContextValue {
-  data: Sales[] | null;
+  data: Sale[] | null;
   isLoading: boolean;
   error: string | null;
 }

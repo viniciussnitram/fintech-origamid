@@ -37,6 +37,14 @@ export default defineConfig([
       '@typescript-eslint/consistent-type-imports': 'error',
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            { group: ['../*'], message: 'Use the @/ alias instead of relative ../ imports' },
+          ],
+        },
+      ],
     },
   },
   prettier,

@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
-// T describes the API response shape; no runtime validation yet (see Zod)
-// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-export function useFetch<T>(url: RequestInfo | URL, options?: RequestInit) {
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters -- T describes the API response shape; no runtime validation yet (see Zod)no-unnecessary-type-parameters
+export function useFetch<T>(url: string, options?: RequestInit) {
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

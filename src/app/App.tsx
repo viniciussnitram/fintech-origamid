@@ -7,7 +7,7 @@ import { SalesContextProvider } from '@/features/sales/context/SalesContextProvi
 export function App() {
   return (
     <SalesContextProvider>
-      <div>
+      <div className="container">
         <SideNav />
         <main>
           <Header>

@@ -8,6 +8,7 @@ export function DateRange() {
 
   return (
     <form
+      className="box flex"
       onSubmit={(event) => {
         event.preventDefault();
       }}

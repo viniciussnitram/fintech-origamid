@@ -1,6 +1,7 @@
 import { Summary } from '@/app/routes/Summary';
 import { Header } from '@/components/layouts/Header';
 import { SideNav } from '@/components/layouts/SideNav';
+import { DateRange } from '@/features/sales/components/DateRange';
 import { SalesContextProvider } from '@/features/sales/context/SalesContextProvider';
 
 export function App() {
@@ -9,7 +10,9 @@ export function App() {
       <div>
         <SideNav />
         <main>
-          <Header />
+          <Header>
+            <DateRange />
+          </Header>
 
           <Summary />
         </main>
